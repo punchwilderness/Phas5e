@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-family: "DrukWide-Bold";
+    src: url("/fonts/DrukWide-Bold-Web.woff2") format("woff2"),
+      url("/fonts/DrukWide-Bold-Web.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+
+:root {
+  font-family: "DrukWide-Bold", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #212121;
+  overflow-x: hidden;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "DrukWide-Bold", Helvetica, Arial, sans-serif;
+}
